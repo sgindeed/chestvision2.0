@@ -23,8 +23,7 @@ def predict():
     if file.filename == "":
         return jsonify({"error": "No file selected"})
 
-    file_path = "static/uploads/" + file.filename
-    os.makedirs("static/uploads/", exist_ok=True)
+    file_path = os.path.join("/tmp", file.filename)
     file.save(file_path)
 
     img = image.load_img(file_path, target_size=(224, 224))
@@ -35,7 +34,7 @@ def predict():
     predicted_class = np.argmax(prediction)
     predicted_label = class_labels[predicted_class]
 
-    return jsonify({"prediction": predicted_label, "file_path": file_path})
+    return jsonify({"prediction": predicted_label})
 
 if __name__ == "__main__":
     app.run(debug=True)
