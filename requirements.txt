@@ -4,3 +4,5 @@ numpy
 Pillow
 gunicorn
 fastapi
+uvicorn
+python-multipart
