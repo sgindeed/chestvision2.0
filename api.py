@@ -4,8 +4,9 @@ import numpy as np
 import tensorflow as tf
 from tensorflow.keras.preprocessing import image
 import uvicorn
-import os
 from fastapi.responses import JSONResponse
+import os
+os.environ["CUDA_VISIBLE_DEVICES"] = "-1"
 
 app = FastAPI()
 
