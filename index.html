@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChestVision</title>
+    <link rel="icon" href="assets/images/logo.PNG" type="image/png">
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+    <section class="header" id="home">
+        <nav>
+            <a href="index.html"><img src="assets/images/logo.PNG" alt="ChestVision"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa-solid fa-circle-xmark" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="#home">HOME</a></li>
+                    <li><a href="#motive">ABOUT</a></li>
+                    <li><a href="#challenges">SERVICES</a></li>
+                    <li><a href="#biospecimen-section">TECH STACK</a></li>
+                    <li><a href="#crop-recommendation">LUNG SCAN</a></li>
+                    <li><a href="#fertilizer-recommendation">AQI IMPACT</a></li>
+                    <li><a href="#smo">FEATURES</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" aria-hidden="true" onclick="showMenu()"></i>
+        </nav>
+        <div class="text-box">
+            <h1>ChestVision</h1>
+            <h2>Advanced Lung Health Analysis</h2>
+            <p>Your trusted partner in respiratory health, providing intelligent, reliable, and user-friendly analysis of lung conditions and smoking impact.</p>
+            <a href="#challenges" class="hero-btn white-btn">GET STARTED</a>
+            <a href="#contact" class="hero-btn">LEARN MORE</a>
+            <div style="margin-top: 30px;">
+                <a href="#contact" class="hero-btn transparent-btn">
+                    <span style="display: block;">Interested?</span>
+                    <span style="display: block;">Check and find out</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="motive" id="motive">
+        <div class="motive-container">
+            <div class="motive-image">
+                <img src="assets/images/about.jpg" alt="About ChestVision">
+            </div>
+            <div class="motive-content">
+                <h1>ABOUT US</h1>
+                <p>ChestVision is an advanced web application designed to assist users in understanding their lung health. Our system provides two key services: analyzing radiology images for lung diseases and assessing the health impact of smoking based on location data.</p>
+                <p>By leveraging intelligent models and accessible technology, ChestVision bridges the gap between medical expertise and public awareness. We empower individuals with insights previously limited to medical professionals.</p>
+                <div class="row">
+                    <div class="motive-col">
+                        <h5>User First</h5>
+                        <p>Designed for simplicity and usefulness</p>
+                    </div>
+                    <div class="motive-col">
+                        <h5>Smart Models</h5>
+                        <p>AI-powered disease detection & impact analysis</p>
+                    </div>
+                    <div class="motive-col">
+                        <h5>Reliable Insights</h5>
+                        <p>Based on medical data and environmental factors</p>
+                    </div>
+                    <div class="motive-col">
+                        <h5>Open Access</h5>
+                        <p>Free to use for personal health insights</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="challenges" id="challenges">
+        <h1>SERVICES & SOLUTIONS</h1>
+        <p>What do we offer and Why Us?</p>
+        <div class="row">
+            <div class="challenges-col">
+                <img src="assets/images/lungs.jpg" alt="Lung Disease Detection" />
+                <a href="#crop-recommendation">
+                    <div class="layer">
+                        <h3>Lung Disease Detection</h3>
+                        <p>Upload a radiology image to detect potential lung diseases.</p>
+                    </div>
+                </a>
+            </div>
+            <div class="challenges-col">
+                <img src="assets/images/aqi.avif" alt="Smoking Impact Analysis" />
+                <a href="#fertilizer-recommendation">
+                    <div class="layer">
+                        <h3>AQI Impact Analysis</h3>
+                        <p>Understand the health impact of AQI based on your location.</p>
+                    </div>
+                </a>
+            </div>
+            <div class="challenges-col">
+                <img src="assets/images/asthma.jpg" alt="Asthma Prediction" />
+                <a href="#">
+                    <div class="layer">
+                        <h3>Asthma Prediction</h3>
+                        <p>Coming soon: Predict asthma risk based on environmental factors.</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="biospecimen-section" id="biospecimen-section">
+        <div class="bio-left">
+            <h1>TECH STACK</h1>
+            <p>
+                Our intelligent analysis system helps users make informed decisions by providing insights into lung health and the impact of environmental factors. ChestVision ensures personalized, accurate, and science-backed health support.
+            </p>
+            <button class="bio-btn" onclick="location.href='#contact'">Get In Touch</button>
+        </div>
+        <div class="bio-right">
+            <ul class="feature-list">
+                <li>AI-powered lung disease detection from radiology images</li>
+                <li>Customized smoking impact analysis based on location data</li>
+                <li>Fast, accurate, and data-driven outputs</li>
+                <li>Backed by medical research and public health datasets</li>
+                <li>High accuracy models (Disease Detection: 98.41%, Smoking Impact: 97.65%)</li>
+                <li>User-friendly forms and clear recommendations</li>
+                <li>Secure hosting and scalable backend APIs (Render)</li>
+                <li>Focused on improving respiratory health and awareness</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="crop-recommendation" class="recommendation-section">
+        <h2>Lung Disease Detection System</h2>
+        <p>Upload your lung radiology image to get an analysis of potential diseases.</p>
+        <form id="cropForm" class="recommendation-form">
+            <input type="file" name="lungImage" accept="image/*" required />
+            <button type="submit" class="recommend-btn">Analyze Image</button>
+        </form>
+        <p id="cropResult" class="recommendation-result"></p>
+    </section>
+
+    <section id="fertilizer-recommendation" class="recommendation-section">
+        <h2>AQI Impact Analysis</h2>
+        <p>This tool uses your current location to show live air quality, PM2.5, and how many cigarettes per day the air pollution is equivalent to. Warnings are shown based on the pollution level.</p>
+        <form id="fertilizerForm" class="recommendation-form">
+            <button type="submit" class="recommend-btn">Analyze My Location</button>
+        </form>
+        <p id="fertilizerResult" class="recommendation-result"></p>
+    </section>
+
+    <section class="smo-section" id="smo">
+        <h1>FEATURES</h1>
+        <p class="smo-intro-paragraph">
+            We are committed to continuously improving ChestVision's performance, accuracy, and user experience. Based on feedback, testing, and evolving technology, we plan the following upgrades and refinements.
+        </p>
+        <div class="smo-content-wrapper">
+            <div class="smo-list-container">
+                <ul class="smo-feature-list">
+                    <li>Integration of real-time environmental data APIs for live impact analysis</li>
+                    <li>Addition of regional language support for broader accessibility</li>
+                    <li>Improved model training with updated medical datasets and environmental factors</li>
+                    <li>Enhanced mobile responsiveness for on-the-go usage</li>
+                    <li>Expanded disease and environmental factor database for broader recommendations</li>
+                    <li>Backend upgrade to secure and scalable cloud architecture</li>
+                    <li>User authentication for saving health history and reports</li>
+                    <li>Deployment of an AI chatbot for instant query resolution</li>
+                </ul>
+            </div>
+        </div>
+        <div class="smo-cards-row">
+            <div class="smo-card-col">
+                <h3>Proven Accuracy</h3>
+                <p>Reliable disease detection and impact analysis with real-world validation.</p>
+            </div>
+            <div class="smo-card-col">
+                <h3>User-Centric Design</h3>
+                <p>Built with simplicity and accessibility for personal health management.</p>
+            </div>
+            <div class="smo-card-col">
+                <h3>Technology Powered</h3>
+                <p>AI and APIs powering intelligent health decisions.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2>CONTACT US</h2>
+            <div class="contact-cards-grid">
+                <!-- Arpita Card -->
+                <div class="contact-card">
+                    <img src="assets/images/arpita.PNG" alt="Arpita Roy" class="contact-avatar">
+                    <h3>Arpita</h3>
+                    <div class="contact-badges">
+                        <a href="mailto:arpiroy175@gmail.com" target="_blank">
+                            <img src="https://img.shields.io/static/v1?message=Gmail&logo=gmail&label=&color=D14836&logoColor=white&labelColor=&style=for-the-badge" height="30" alt="gmail logo" />
+                        </a>
+                        <a href="https://github.com/Arpita23r" target="_blank">
+                            <img src="https://img.shields.io/static/v1?message=Arpita23r&label=GitHub&color=181717&logo=github&logoColor=white&style=for-the-badge" height="30" alt="GitHub logo" />
+                        </a>
+                        <a href="https://www.linkedin.com/in/arpita-roy-295498245/" target="_blank">
+                            <img src="https://img.shields.io/static/v1?message=LinkedIn&logo=linkedin&label=&color=0077B5&logoColor=white&labelColor=&style=for-the-badge" height="30" alt="linkedin logo" />
+                        </a>
+                    </div>
+                </div>
+                <!-- Supratim Card -->
+                <div class="contact-card">
+                    <img src="assets/images/supratim.png" alt="Supratim" class="contact-avatar">
+                    <h3>Supratim</h3>
+                    <div class="contact-badges">
+                        <a href="mailto:maverickunfolded@gmail.com" target="_blank">
+                            <img src="https://img.shields.io/static/v1?message=Gmail&logo=gmail&label=&color=D14836&logoColor=white&labelColor=&style=for-the-badge" height="30" alt="gmail logo" />
+                        </a>
+                        <a href="https://github.com/sgindeed" target="_blank">
+                            <img src="https://img.shields.io/static/v1?message=sgindeed&label=GitHub&color=181717&logo=github&logoColor=white&style=for-the-badge" height="30" alt="GitHub logo" />
+                        </a>
+                        <a href="https://www.linkedin.com/in/supratim-ghosh-b07091241/" target="_blank">
+                            <img src="https://img.shields.io/static/v1?message=LinkedIn&logo=linkedin&label=&color=0077B5&logoColor=white&labelColor=&style=for-the-badge" height="30" alt="linkedin logo" />
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="assets/scripts.js"></script>
+</body>
+
+<footer style="background-color: #e4ffe4; padding: 20px; text-align: center; font-family: Poppins, sans-serif; color: #1b5e20;">
+    <p style="font-size: 20px;">©2025 ChestVision. All rights reserved.</p>
+</footer>
+</html>
