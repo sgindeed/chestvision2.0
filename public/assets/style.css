@@ -541,7 +541,7 @@ h3 {
     }
 }
 
-.biospecimen-section {
+.tech-stack {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
@@ -897,7 +897,47 @@ footer a {
     color: var(--footer-text) !important; /* Apply theme text color */
 }
 
+/* Update section IDs in CSS to match HTML */
 
+#about-us, #about-us * {
+    /* Styles for About Us section */
+}
+
+#services, #services * {
+    /* Styles for Services section */
+}
+
+#tech-stack, #tech-stack * {
+    /* Styles for Tech Stack section */
+}
+
+#lung-scan, #lung-scan * {
+    /* Styles for Lung Scan section */
+}
+
+#aqi-impact, #aqi-impact * {
+    /* Styles for AQI Impact section */
+}
+
+#features, #features * {
+    /* Styles for Features section */
+}
+
+#contact, #contact * {
+    /* Styles for Contact section */
+}
+
+/* If you have any section-specific CSS using old IDs like #about, #services, #techstack, #lungscan-section, #aqiimpact-section, update them to the above IDs. */
+
+/* Example: */
+#lung-scan .recommendation-section {
+    /* ...existing code... */
+}
+#aqi-impact .recommendation-section {
+    /* ...existing code... */
+}
+
+/* Remove or update any selectors using old IDs that do not match the HTML. */
 
 
 /* --- Media Queries for Responsive Design (Flexible Approach) --- */
@@ -2026,7 +2066,6 @@ footer a {
 }
 
 
-/* Crop & Fertilizer Recommendation Section Styles */
 .recommendation-section {
     background: var(--section-bg-color);
     color: var(--text-color);
