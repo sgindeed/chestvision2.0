@@ -16,23 +16,17 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function setTheme(theme) {
         body.setAttribute('data-theme', theme);
-        // We are no longer storing theme in localStorage as per requirement to always respect device setting
-        // localStorage.setItem('theme', theme);
     }
 
     // Set theme based solely on user's device preference
     const prefersDarkMode = window.matchMedia('(prefers-color-scheme: dark)');
-
-    // Initial theme setting
     setTheme(prefersDarkMode.matches ? 'dark' : 'light');
-
-    // Listen for changes in the user's preferred color scheme
     prefersDarkMode.addEventListener('change', (e) => {
         setTheme(e.matches ? 'dark' : 'light');
     });
 
-    // Animation Targets
-    const bioListContainer = document.querySelector('.biospecimen-section .feature-list');
+    // Animation Targets (update class names if you change them in HTML)
+    const bioListContainer = document.querySelector('.tech-stack .feature-list');
     const smoListContainer = document.querySelector('.smo-section .smo-list-container');
     const smoCardsContainer = document.querySelector('.smo-section .smo-cards-row');
     const motiveCols = document.querySelectorAll('.motive-col');
@@ -128,10 +122,11 @@ window.addEventListener('scroll', () => {
 });
 
 
-document.getElementById("cropForm")?.addEventListener("submit", async function (e) {
+// Lung Disease Detection (Lung Scan)
+document.getElementById("lungScanForm")?.addEventListener("submit", async function (e) {
   e.preventDefault();
 
-  const resultElem = document.getElementById("cropResult");
+  const resultElem = document.getElementById("lungScanResult");
   resultElem.innerText = "Analyzing image...";
 
   const formData = new FormData();
@@ -165,11 +160,10 @@ document.getElementById("cropForm")?.addEventListener("submit", async function (
   }
 });
 
-
-// Smoking Impact Analysis (Live AQI & Cigarette Equivalent)
-document.getElementById("fertilizerForm")?.addEventListener("submit", async function (e) {
+// AQI Impact Analysis (Smoking Impact)
+document.getElementById("aqiImpactForm")?.addEventListener("submit", async function (e) {
   e.preventDefault();
-  const resultElem = document.getElementById("fertilizerResult");
+  const resultElem = document.getElementById("aqiImpactResult");
   resultElem.innerText = "Detecting your location...";
 
   if (!navigator.geolocation) {
