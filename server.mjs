@@ -13,7 +13,7 @@ const app = express();
 
 app.use(express.static(__dirname));
 
-// Proxy for geocoding (OpenCage)
+
 app.get('/api/geocode', async (req, res) => {
   const { lat, lng } = req.query;
   if (!lat || !lng) return res.status(400).json({ error: "Missing lat/lng" });
@@ -24,7 +24,7 @@ app.get('/api/geocode', async (req, res) => {
   res.json(data);
 });
 
-// Proxy for air quality (OpenWeatherMap)
+
 app.get('/api/airquality', async (req, res) => {
   const { lat, lng } = req.query;
   if (!lat || !lng) return res.status(400).json({ error: "Missing lat/lng" });
