@@ -24,12 +24,12 @@
                 <i class="fa-solid fa-circle-xmark" onclick="hideMenu()"></i>
                 <ul>
                     <li><a href="#home">HOME</a></li>
-                    <li><a href="#motive">ABOUT</a></li>
-                    <li><a href="#challenges">SERVICES</a></li>
-                    <li><a href="#biospecimen-section">TECH STACK</a></li>
-                    <li><a href="#crop-recommendation">LUNG SCAN</a></li>
-                    <li><a href="#fertilizer-recommendation">AQI IMPACT</a></li>
-                    <li><a href="#smo">FEATURES</a></li>
+                    <li><a href="#about-us">ABOUT</a></li>
+                    <li><a href="#services">SERVICES</a></li>
+                    <li><a href="#tech-stack">TECH STACK</a></li>
+                    <li><a href="#lung-scan">LUNG SCAN</a></li>
+                    <li><a href="#aqi-impact">AQI IMPACT</a></li>
+                    <li><a href="#features">FEATURES</a></li>
                     <li><a href="#contact">CONTACT</a></li>
                 </ul>
             </div>
@@ -39,7 +39,7 @@
             <h1>ChestVision</h1>
             <h2>Advanced Lung Health Analysis</h2>
             <p>Your trusted partner in respiratory health, providing intelligent, reliable, and user-friendly analysis of lung conditions and smoking impact.</p>
-            <a href="#challenges" class="hero-btn white-btn">GET STARTED</a>
+            <a href="#services" class="hero-btn white-btn">GET STARTED</a>
             <a href="#contact" class="hero-btn">LEARN MORE</a>
             <div style="margin-top: 30px;">
                 <a href="#contact" class="hero-btn transparent-btn">
@@ -50,7 +50,7 @@
         </div>
     </section>
 
-    <section class="motive" id="motive">
+    <section class="motive" id="about-us">
         <div class="motive-container">
             <div class="motive-image">
                 <img src="assets/images/about.jpg" alt="About ChestVision">
@@ -81,13 +81,13 @@
         </div>
     </section>
 
-    <section class="challenges" id="challenges">
+    <section class="challenges" id="services">
         <h1>SERVICES & SOLUTIONS</h1>
         <p>What do we offer and Why Us?</p>
         <div class="row">
             <div class="challenges-col">
                 <img src="assets/images/lungs.jpg" alt="Lung Disease Detection" />
-                <a href="#crop-recommendation">
+                <a href="#lung-scan">
                     <div class="layer">
                         <h3>Lung Disease Detection</h3>
                         <p>Upload a radiology image to detect potential lung diseases.</p>
@@ -96,7 +96,7 @@
             </div>
             <div class="challenges-col">
                 <img src="assets/images/aqi.avif" alt="Smoking Impact Analysis" />
-                <a href="#fertilizer-recommendation">
+                <a href="#aqi-impact">
                     <div class="layer">
                         <h3>AQI Impact Analysis</h3>
                         <p>Understand the health impact of AQI based on your location.</p>
@@ -115,7 +115,7 @@
         </div>
     </section>
 
-    <section class="biospecimen-section" id="biospecimen-section">
+    <section class="tech-stack" id="tech-stack">
         <div class="bio-left">
             <h1>TECH STACK</h1>
             <p>
@@ -137,26 +137,26 @@
         </div>
     </section>
 
-    <section id="crop-recommendation" class="recommendation-section">
+    <section id="lung-scan" class="recommendation-section">
         <h2>Lung Disease Detection System</h2>
         <p>Upload your lung radiology image to get an analysis of potential diseases.</p>
-        <form id="cropForm" class="recommendation-form">
+        <form id="lungScanForm" class="recommendation-form">
             <input type="file" name="lungImage" accept="image/*" required />
             <button type="submit" class="recommend-btn">Analyze Image</button>
         </form>
-        <p id="cropResult" class="recommendation-result"></p>
+        <p id="lungScanResult" class="recommendation-result"></p>
     </section>
 
-    <section id="fertilizer-recommendation" class="recommendation-section">
+    <section id="aqi-impact" class="recommendation-section">
         <h2>AQI Impact Analysis</h2>
         <p>This tool uses your current location to show live air quality, PM2.5, and how many cigarettes per day the air pollution is equivalent to. Warnings are shown based on the pollution level.</p>
-        <form id="fertilizerForm" class="recommendation-form">
+        <form id="aqiImpactForm" class="recommendation-form">
             <button type="submit" class="recommend-btn">Analyze My Location</button>
         </form>
-        <p id="fertilizerResult" class="recommendation-result"></p>
+        <p id="aqiImpactResult" class="recommendation-result"></p>
     </section>
 
-    <section class="smo-section" id="smo">
+    <section class="smo-section" id="features">
         <h1>FEATURES</h1>
         <p class="smo-intro-paragraph">
             We are committed to continuously improving ChestVision's performance, accuracy, and user experience. Based on feedback, testing, and evolving technology, we plan the following upgrades and refinements.
@@ -195,7 +195,6 @@
         <div class="container">
             <h2>CONTACT US</h2>
             <div class="contact-cards-grid">
-                <!-- Arpita Card -->
                 <div class="contact-card">
                     <img src="assets/images/arpita.PNG" alt="Arpita Roy" class="contact-avatar">
                     <h3>Arpita</h3>
@@ -211,7 +210,6 @@
                         </a>
                     </div>
                 </div>
-                <!-- Supratim Card -->
                 <div class="contact-card">
                     <img src="assets/images/supratim.png" alt="Supratim" class="contact-avatar">
                     <h3>Supratim</h3>
