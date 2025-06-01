@@ -113,7 +113,7 @@ Then open: [http://localhost:3000](http://localhost:3000)
 
 ## 👩‍💻 Contributors
 
-### 👩‍🔬 Arpita Roy
+### 👩‍🔬 Arpita
 
 📧 [arpiroy175@gmail.com](mailto:arpiroy175@gmail.com)
 🐙 [GitHub: Arpita23r](https://github.com/Arpita23r)
